@@ -58,7 +58,7 @@ uuid.v5(Uuid.NAMESPACE_URL, 'www.google.com'); // -> 'c74a196f-f19d-5ea9-bffd-a2
 
 ## API
 
-### Uuid({Map<String, dynamic> options: null}) -> Uuid (Consturctor)
+### Uuid({Map<String, dynamic> options: null}) -> Uuid (Constructor)
 
 Constructor supports setting some global RNG sertings so you don't have to specify them on each function call for v4 or v5
 
@@ -121,7 +121,7 @@ Example: In-place generation of two binary IDs
 var myBuffer = new List(32); // -> []
 uuid.v1buffer(myBuffer);
 // -> [115, 189, 5, 128, 201, 91, 17, 225, 146, 52, 109, 0, 9, 0, 52, 128, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null]
-uuid.v1buffer(myBuffer, offset: 16);  
+uuid.v1buffer(myBuffer, offset: 16);
 // -> [115, 189, 5, 128, 201, 91, 17, 225, 146, 52, 109, 0, 9, 0, 52, 128, 115, 189, 5, 129, 201, 91, 17, 225, 146, 52, 109, 0, 9, 0, 52, 128]
 
 // Optionally use uuid.unparse() to get stringify the ids
